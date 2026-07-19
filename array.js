@@ -72,18 +72,25 @@
 // Task 6: Sum of Array
 // const numbers = [12, 15, 18, 20, 25];
 // ➡️ সব সংখ্যার যোগফল বের করো।
-    const numbers = [12, 15, 18, 20, 25];
-    let sumOfNumbers = 0;
-    for(number of numbers){
-        sumOfNumbers += number;
-    }
-    console.log(sumOfNumbers)
+// const numbers = [12, 15, 18, 20, 25];
+// let sumOfNumbers = 0;
+// for(let number of numbers){
+//     sumOfNumbers += number;
+// }
+// console.log(sumOfNumbers)
 
 
 // Task 7: Average
 // const marks = [80, 90, 70, 100, 60];
 // ➡️ Average বের করো।
 
+const marks = [80, 90, 70, 100, 60];
+let sumOfMArks = 0;
+for (let mark of marks) {
+    sumOfMArks += mark
+}
+const getAverage = sumOfMArks / marks.length;
+console.log(getAverage)
 
 
 // 🟡 Intermediate Level (8–14)
