@@ -84,13 +84,13 @@
 // const marks = [80, 90, 70, 100, 60];
 // ➡️ Average বের করো।
 
-const marks = [80, 90, 70, 100, 60];
-let sumOfMArks = 0;
-for (let mark of marks) {
-    sumOfMArks += mark
-}
-const getAverage = sumOfMArks / marks.length;
-console.log(getAverage)
+// const marks = [80, 90, 70, 100, 60];
+// let sumOfMArks = 0;
+// for (let mark of marks) {
+//     sumOfMArks += mark
+// }
+// const getAverage = sumOfMArks / marks.length;
+// console.log(getAverage)
 
 
 // 🟡 Intermediate Level (8–14)
@@ -98,6 +98,20 @@ console.log(getAverage)
 // const nums = [12, 5, 8, 19, 20, 44, 17];
 // ➡️ কয়টি even number আছে বের করো।
 
+const countEvens = (nums) => {
+    let count = 0;
+    if (nums.length === 0) {
+        return "this array is empty"
+    }
+    for(num of nums){
+        if(num % 2 === 0){
+            count ++
+        }
+    }
+    return count
+}
+const countedEvens = countEvens([12, 5, 8, 19, 20, 44, 17])
+console.log(countedEvens)
 
 
 // Task 9: Count Odd Numbers
