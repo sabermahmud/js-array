@@ -3,22 +3,29 @@
 // const fruits = ["apple", "banana", "mango", "orange"];
 // ➡️ Array-তে মোট কয়টি element আছে বের করো।
 
-const fruits = ["apple", "banana", "mango", "orange"];
+// const fruits = ["apple", "banana", "mango", "orange"];
 // function countFruits (names){
 //     return names.length
 // }
 // const totalFruits = countFruits(fruits);
 // console.log(totalFruits)
-const countFruits = (names) => {
-    return names.length;
-}
-console.log(countFruits(fruits))
+// const countFruits = (names) => {
+//     return names.length;
+// }
+// console.log(countFruits(fruits))
 
 
 
 // Task 2: First & Last Element
 // const colors = ["red", "green", "blue", "yellow", "black"];
 // ➡️ প্রথম এবং শেষ element print করো।
+// const colors = ["red", "green", "blue", "yellow", "black"];
+// const getFirstAndLast = (colorsNames) => {
+//     const firstOfArray =colorsNames[0];
+//     const lastOfArray = colorsNames[colorsNames.length-1]
+//     console.log(firstOfArray, lastOfArray)
+// }
+// getFirstAndLast (colors)
 
 
 
@@ -26,7 +33,17 @@ console.log(countFruits(fruits))
 // const nums = [10, 20, 30, 40, 50];
 // ➡️ মাঝের element print করো।
 
-
+const nums = [10, 20, 30, 40, 50];
+function getMiddle (numsArr){
+    if(numsArr.length === 0){
+        return "this array is empty"
+        console.log(getMiddle([]))
+    }
+    const middleElement = numsArr[Math.floor(numsArr.length / 2)];
+    return middleElement;
+}
+const middle = getMiddle(nums)
+console.log(middle);
 
 // Task 4: Print All Elements
 // const countries = ["Bangladesh", "Saudi", "Qatar", "UAE"];
