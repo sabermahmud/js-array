@@ -50,19 +50,23 @@
 // Task 4: Print All Elements
 // const countries = ["Bangladesh", "Saudi", "Qatar", "UAE"];
 // ➡️ for...of ব্যবহার করে সব element print করো।
-const countries = ["Bangladesh", "Saudi", "Qatar", "UAE"];
-function allCountries (countriesNames){
-    for (let name of countriesNames){
-        console.log(name)
-    }
-} 
-allCountries(countries)
+// const countries = ["Bangladesh", "Saudi", "Qatar", "UAE"];
+// function allCountries (countriesNames){
+//     for (let name of countriesNames){
+//         console.log(name)
+//     }
+// } 
+// allCountries(countries)
+
+
 
 // Task 5: Print All Elements with Index
 // const names = ["Saber", "Hasan", "Rahim", "Karim"];
 // ➡️ প্রতিটি element-এর index এবং value print করো।
-
-
+const names = ["Saber", "Hasan", "Rahim", "Karim"];
+for(let i = 0; i < names.length; i++){
+    console.log(`${i}: ${names[i]}`)
+}
 
 // Task 6: Sum of Array
 // const numbers = [12, 15, 18, 20, 25];
