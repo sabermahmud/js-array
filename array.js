@@ -98,25 +98,39 @@
 // const nums = [12, 5, 8, 19, 20, 44, 17];
 // ➡️ কয়টি even number আছে বের করো।
 
-const countEvens = (nums) => {
-    let count = 0;
-    if (nums.length === 0) {
-        return "this array is empty"
-    }
-    for(num of nums){
-        if(num % 2 === 0){
-            count ++
-        }
-    }
-    return count
-}
-const countedEvens = countEvens([12, 5, 8, 19, 20, 44, 17])
-console.log(countedEvens)
+// const countEvens = (nums) => {
+//     let count = 0;
+//     if (nums.length === 0) {
+//         return "this array is empty"
+//     }
+//     for (let num of nums) {
+//         if (num % 2 === 0) {
+//             count++
+//         }
+//     }
+//     return count
+// }
+// const countedEvens = countEvens([12, 5, 8, 19, 20, 44, 17])
+// console.log(countedEvens)
 
 
 // Task 9: Count Odd Numbers
 // const nums = [12, 5, 8, 19, 20, 44, 17];
 // ➡️ কয়টি odd number আছে বের করো।
+// const countOdds = (nums) => {
+//     if (nums.length === 0) {
+//         return "this array is empty"
+//     }
+//     let count = 0;
+//     for (let num of nums) {
+//         if (num % 2 !== 0) {
+//             count++
+//         }
+//     }
+//     return count
+// }
+// const countedOdds = countOdds([12, 5, 8, 19, 20, 44, 17])
+// console.log(countedOdds);
 
 
 
@@ -124,7 +138,20 @@ console.log(countedEvens)
 // const nums = [15, 80, 35, 120, 75];
 // ➡️ সবচেয়ে বড় সংখ্যা বের করো।
 
-
+const getMax = (nums) => {
+    if(nums.length === 0){
+        return "this array is empty"
+    }
+    let max = nums[0]
+    for(num of nums){
+        if(max < num){
+            max = num
+        }
+    }
+    return max 
+}
+const maxElement = getMax([-15, -80, -35, -120, -75])
+console.log(maxElement)
 
 // Task 11: Smallest Number
 // const nums = [15, 80, 35, 120, 75];
