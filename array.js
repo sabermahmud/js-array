@@ -63,15 +63,21 @@
 // Task 5: Print All Elements with Index
 // const names = ["Saber", "Hasan", "Rahim", "Karim"];
 // ➡️ প্রতিটি element-এর index এবং value print করো।
-const names = ["Saber", "Hasan", "Rahim", "Karim"];
-for(let i = 0; i < names.length; i++){
-    console.log(`${i}: ${names[i]}`)
-}
+// const names = ["Saber", "Hasan", "Rahim", "Karim"];
+// for(let i = 0; i < names.length; i++){
+//     console.log(`${i}: ${names[i]}`)
+// }
+
 
 // Task 6: Sum of Array
 // const numbers = [12, 15, 18, 20, 25];
 // ➡️ সব সংখ্যার যোগফল বের করো।
-
+    const numbers = [12, 15, 18, 20, 25];
+    let sumOfNumbers = 0;
+    for(number of numbers){
+        sumOfNumbers += number;
+    }
+    console.log(sumOfNumbers)
 
 
 // Task 7: Average
