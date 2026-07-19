@@ -138,26 +138,41 @@
 // const nums = [15, 80, 35, 120, 75];
 // ➡️ সবচেয়ে বড় সংখ্যা বের করো।
 
-const getMax = (nums) => {
-    if(nums.length === 0){
-        return "this array is empty"
-    }
-    let max = nums[0]
-    for(num of nums){
-        if(max < num){
-            max = num
-        }
-    }
-    return max 
-}
-const maxElement = getMax([-15, -80, -35, -120, -75])
-console.log(maxElement)
+// const getMax = (nums) => {
+//     if(nums.length === 0){
+//         return "this array is empty"
+//     }
+//     let max = nums[0]
+//     for(let num of nums){
+//         if(max < num){
+//             max = num
+//         }
+//     }
+//     return max 
+// }
+// const maxElement = getMax([15, 80, 35, 120, 75])
+// console.log(maxElement)
+
+
+
 
 // Task 11: Smallest Number
 // const nums = [15, 80, 35, 120, 75];
 // ➡️ সবচেয়ে ছোট সংখ্যা বের করো।
-
-
+const findSmallest = (nums) => {
+    if(nums.length === 0){
+        return "this array is empty"
+    }
+    let min = nums[0]
+    for(let num of nums){
+        if(min > num){
+            min = num
+        }
+    }
+    return min
+}
+const smallestNumber = findSmallest([15, 80, 35, 120, 75]);
+console.log(smallestNumber);
 
 // Task 12: Find a Number
 // const nums = [10, 25, 40, 55, 70];
