@@ -33,23 +33,30 @@
 // const nums = [10, 20, 30, 40, 50];
 // ➡️ মাঝের element print করো।
 
-const nums = [10, 20, 30, 40, 50];
-function getMiddle (numsArr){
-    if(numsArr.length === 0){
-        return "this array is empty"
-        console.log(getMiddle([]))
-    }
-    const middleElement = numsArr[Math.floor(numsArr.length / 2)];
-    return middleElement;
-}
-const middle = getMiddle(nums)
-console.log(middle);
+// const nums = [10, 20, 30, 40, 50];
+// function getMiddle (numsArr){
+//     if(numsArr.length === 0){
+//         return "this array is empty"
+//     }
+//     const middleElement = numsArr[Math.floor(numsArr.length / 2)];
+//     return middleElement;
+// }
+// const middle = getMiddle(nums)
+// console.log(middle);
+
+
+
 
 // Task 4: Print All Elements
 // const countries = ["Bangladesh", "Saudi", "Qatar", "UAE"];
 // ➡️ for...of ব্যবহার করে সব element print করো।
-
-
+const countries = ["Bangladesh", "Saudi", "Qatar", "UAE"];
+function allCountries (countriesNames){
+    for (let name of countriesNames){
+        console.log(name)
+    }
+} 
+allCountries(countries)
 
 // Task 5: Print All Elements with Index
 // const names = ["Saber", "Hasan", "Rahim", "Karim"];
